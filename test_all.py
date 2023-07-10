@@ -28,7 +28,7 @@ for file in [f for f in files if not f.endswith("test_all.py")]:
             Failed = True
 
 
-if Failed:
+if failed:
     print("Not all test passed!")
     sys.exit(1)
 
