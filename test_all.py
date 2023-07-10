@@ -9,23 +9,25 @@ import glob
 import subprocess
 import random
 import sys
+import importlib.util
 
 files = glob.glob("./*.py")
 failed = False
 for file in [f for f in files if not f.endswith("test_all.py")]:
     print("Testing " + file)
+    mod_spec = importlib.util.spec_from_file_location("even", file)
+    mod = importlib.util.module_from_spec(mod_spec)
+    mod_spec.loader.exec_module(mod)
     for i in range(20):
         number = random.randint(0, 10 * 1000)
-        test = subprocess.run(['python', file], input=str(number), text=True, encoding='utf-8', stdout=subprocess.PIPE)
-        prediction = test.stdout.strip()
-        prediction = prediction[len("Input a number: "):]
+        prediction = mod.is_even(number)
         if number % 2 == 0 and prediction == "even":
             continue
         if number % 2 != 0 and prediction == "odd":
             continue
         else:
             print("Test " + str(i) + " failed! Number was: " + str(number) + ", it returned: " + prediction)
-            Failed = True
+            failed = True
 
 
 if failed:
