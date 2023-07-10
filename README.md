@@ -4,11 +4,8 @@ A number of different is-even calculations for python
 [![Tests](https://github.com/Khhs167/even-py/actions/workflows/testing.yml/badge.svg)](https://github.com/Khhs167/even-py/actions/workflows/testing.yml)
 
 # API Specification
-The file should provide a simple text-based API.
-Using whatever means necessary, it should, without a newline, print "Input a number: ", then read a number from the user.
-If the number inputted is even, it MUST print "even" on a new line, then terminate. If the number inputted is odd, it MUST print "odd".
-
-If the number is in fact not a number, it SHOULD print "nan".
+The file should define a function called is_even. That function should take in a single number, and return a string.
+This string should be "even" if the number is even, and "odd" if the number is odd
 
 # File Structure
 ```py
