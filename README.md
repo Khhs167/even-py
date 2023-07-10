@@ -1,5 +1,7 @@
 # even-py
-A number of different is-even calculations for python
+A number of different is-even calculations for python  
+
+[![Tests](https://github.com/Khhs167/even-py/actions/workflows/testing.yml/badge.svg)](https://github.com/Khhs167/even-py/actions/workflows/testing.yml)
 
 # API Specification
 The file should provide a simple text-based API.
