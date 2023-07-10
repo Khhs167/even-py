@@ -1,4 +1,4 @@
-# is_even.py by khhs
+# string_character_check.py by khhs
 
 # This is a simple and efficient python program that checks if the entered
 # number is even, and prints "even" if that is the case. Otherwise it prints
