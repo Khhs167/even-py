@@ -7,6 +7,8 @@ A number of different is-even calculations for python
 The file should define a function called is_even. That function should take in a single number, and return a string.
 This string should be "even" if the number is even, and "odd" if the number is odd
 
+The number can be any number between 0 and 10,000 but the implementation SHOULD support numbers larger than that if possible.
+
 # File Structure
 ```py
 # file_name.py by author
