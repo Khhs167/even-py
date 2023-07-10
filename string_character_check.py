@@ -6,4 +6,4 @@
 
 # This program is under the GNU General Public License, aka the GPL.
 
-print("odd" if int(str(int(input("Input a number: ")))[-1]) % 2 != 0 else "even")
+is_even = lambda x : ("odd" if int(str(x)[-1]) % 2 != 0 else "even")
