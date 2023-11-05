@@ -29,5 +29,7 @@ some_is_even_code_here
 
 ```
 The files should follow the structure shown, and use snake_case for all naming(including file naming). The GPL line should be kept as-is  
-It is also reccomended to try to compress the actual code as much, preferrably on as few lines as possible to make it easier for people
+It is also reccomended to try to compress the actual code as much as possible, preferrably on as few lines as possible to make it easier for people
 who have a difficulity scrolling vertically.
+
+If you haven't figured it out already, this project is satire, and is not meant to be taken seriously.
